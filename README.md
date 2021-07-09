@@ -111,5 +111,5 @@ psql -h 0.0.0.0 -p 5432 -U postgres
 
 
 
-## You now know how to mange state with Postgress and terraform. Next steps can be in the pre-install check list above. 
+## Now that you are familar with TF Backend, Postgres please follow the checklist to learn the best ways to setup for dev, staging and prod! 
 
