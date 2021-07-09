@@ -34,7 +34,7 @@ chmod +x vagrant.sh
 ``
 
 
-## Next Install Terraform. For this demo special Instructions 
+## Next Install Terraform to ensure it works follow this. If you already know reference HashiCorp Learn. 
 
 `` 
 sudo apt-get install wget unzip
