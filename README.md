@@ -4,6 +4,9 @@ Managing Policy and Infrastructure as Code requires State and using Postgres wit
 Enterprise is one way to achieve that. This lab will help you understand how. For official 
 reccomendations please refer to the links for both AWS and HashiCorp below:
 
+## ** I created this Vagrantfile for use with M1 Macbook. If you are running something else like linux, or windows there are plenty of other Vagrant machines 
+or you can just skip it. However please make sure you have docker installed correctly before trying to use the lab. If the shell script is not working due to your OS or path you can always just use the commands in the four loop (:
+
 
 
 https://www.terraform.io/docs/enterprise/before-installing/postgres-requirements.html
@@ -65,3 +68,45 @@ sudo apt-get -y install python3-pip
 ``
 sudo pip install docker-compose
 ``
+
+
+# Deploy Docker 
+
+`` 
+docker-compose up 
+`` 
+
+# Enter the container 
+
+``
+docker exec -it vagrant-tf-enterprise-psql-dev_db_1 /bin/bash
+``
+
+# Update the DB Schema as example for lab
+
+`` 
+psql -U postgres
+``
+
+`` 
+CREATE SCHEMA IF NOT EXISTS rails;
+CREATE SCHEMA IF NOT EXISTS vault;
+CREATE SCHEMA IF NOT EXISTS registry;
+``
+
+## Execute Terraform with the following commands to finish lab and use Postgres as a backend for TF
+
+``
+Terraform init
+Terraform plan
+Terraform apply
+``
+
+# You can reach your local data base by using 
+
+``
+psql -h 0.0.0.0 -p 5432 -U postgres
+``
+
+## You now know how to mange state with Postgress and terraform. Next steps can be in the pre-install check list above. 
+
