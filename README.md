@@ -16,7 +16,7 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html
 
 
 ``
-git clone git@github.com:Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git 
+git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git 
 ``
 
 `` 
