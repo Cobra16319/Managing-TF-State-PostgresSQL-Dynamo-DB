@@ -23,6 +23,7 @@ git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git
 cd Vagrant-TF-Enterprise-Psql-Dev 
 `` 
 
+# Skip if you do not need Vagrant
 
 ``
 chmod +x vagrant.sh
@@ -107,6 +108,8 @@ Terraform apply
 ``
 psql -h 0.0.0.0 -p 5432 -U postgres
 ``
+
+
 
 ## You now know how to mange state with Postgress and terraform. Next steps can be in the pre-install check list above. 
 
