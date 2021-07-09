@@ -1,10 +1,12 @@
+# Trying to do one four loop for whole script as a test
+#!/bin/bash
 
-## You will be using buildx as sort of a container in a container for workflow consistency (Not for Prod use)
+for P in {1..3} ; do echo export DOCKER_BUILDKIT=1 && docker buildx create --use --name=qemu && docker buildx inspect --bootstrap && vagrant up --provider=docker && vagrant ssh ; done
 
-echo export DOCKER_BUILDKIT=1 && docker buildx create --use --name=qemu && docker buildx inspect --bootstrap
 
-## Finally run your Vagrant Commands and remmeber to specifiy Provider 
 
-echo  vagrant up --provider=docker && vagrant ssh
+
+
+
 
 
