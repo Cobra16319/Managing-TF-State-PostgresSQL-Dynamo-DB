@@ -28,7 +28,7 @@ git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git
 cd Vagrant-TF-Enterprise-Psql-Dev 
 `` 
 
-# Skip if you do not need Vagrant
+# Skip if you do not need Vagrant for the M1 Mac Book specifically. (This just automates that setup)
 
 ``
 chmod +x vagrant.sh
