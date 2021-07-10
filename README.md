@@ -118,3 +118,8 @@ psql -h 0.0.0.0 -p 5432 -U postgres
 
 ## Now that you are familar with TF Backend, Postgres please follow the checklist to learn the best ways to setup for dev, staging and prod! 
 
+
+I also made one for OSS TF using AWS S3 & Dynamo DB that you can use if you are not in need of enterprise solutions.
+
+https://github.com/Cobra16319/TF-Backend-Example
+
