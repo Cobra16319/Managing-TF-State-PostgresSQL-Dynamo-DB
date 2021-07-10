@@ -1,12 +1,17 @@
-# Vagrant-TF-Enterprise-Psql-Dev
+## Vagrant-TF-Enterprise-Psql-Dev
 Workflow for a dev machine to practice setup for Terraform Enterprise with PSQL. 
 Managing Policy and Infrastructure as Code requires State and using Postgres with Terraform 
 Enterprise is one way to achieve that. This lab will help you understand how. For official 
 reccomendations please refer to the links for both AWS and HashiCorp below:
 
-## ** I created this Vagrantfile for use with M1 Macbook. If you are running something else like linux, or windows there are plenty of other Vagrant machines 
-or you can just skip it. However please make sure you have docker installed correctly before trying to use the lab. If the shell script is not working due to your OS or path you can always just use the commands in the four loop (:
+## I created this Vagrantfile for use with M1 Macbook. Refer to HashiCorp Learn for Vagrant instructions for your OS. 
 
+
+https://learn.hashicorp.com/tutorials/vagrant/getting-started-boxes
+
+
+
+## Terraform Enterprise Guide and AWS RDS selection Guides below:
 
 
 https://www.terraform.io/docs/enterprise/before-installing/postgres-requirements.html
