@@ -4,13 +4,6 @@ Managing Policy and Infrastructure as Code requires State and using Postgres wit
 Enterprise is one way to achieve that. This lab will help you understand how. For official 
 reccomendations please refer to the links for both AWS and HashiCorp below:
 
-## I created this Vagrantfile for use with M1 Macbook. Refer to HashiCorp Learn for Vagrant instructions for your OS. 
-
-
-https://learn.hashicorp.com/tutorials/vagrant/getting-started-boxes
-
-
-
 ## Terraform Enterprise Guide and AWS RDS selection Guides below:
 
 
@@ -18,7 +11,13 @@ https://www.terraform.io/docs/enterprise/before-installing/postgres-requirements
 
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html
 
+## I created this Vagrantfile for use with M1 Macbook. Refer to HashiCorp Learn for Vagrant instructions for your OS. 
 
+
+https://learn.hashicorp.com/tutorials/vagrant/getting-started-boxes
+
+
+## Prerequisites: Git, Docker, Unzip, basic knowledge of OS, Docker, and DevOps tools.
 
 ``
 git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git 
