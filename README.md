@@ -1,8 +1,7 @@
 ## Vagrant-TF-Enterprise-Psql-Dev
-Workflow for a dev machine to practice setup for Terraform Enterprise with PSQL. 
-Managing Policy and Infrastructure as Code requires State and using Postgres with Terraform 
-Enterprise is one way to achieve that. This lab will help you understand how. For official 
-reccomendations please refer to the links for both AWS and HashiCorp below:
+Lab for setting up Terraform Enterprise with Postgressql as a backend. 
+This lab is to help understand how to use Postrgresql as a backend for TF state.
+For official reccomendations please refer to the links for both AWS and HashiCorp below:
 
 ## Terraform Enterprise Guide and AWS RDS selection Guides below:
 
