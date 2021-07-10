@@ -94,13 +94,13 @@ psql -U postgres
 
 `` 
 CREATE SCHEMA IF NOT EXISTS rails;
+``
 
-
-
+``
 CREATE SCHEMA IF NOT EXISTS vault;
+``
 
-
-
+``
 CREATE SCHEMA IF NOT EXISTS registry;
 ``
 
