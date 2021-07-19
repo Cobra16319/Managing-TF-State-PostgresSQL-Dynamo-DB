@@ -22,13 +22,13 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html
 https://github.com/Cobra16319/TF-Backend-Example
 
 
-## I created this Vagrantfile for use with M1 Macbook. Refer to HashiCorp Learn for Vagrant instructions for your OS. 
+## Refer here for Vagrant https://learn.hashicorp.com/vagrant unless you are using M1 Mac then you can use my Vagrant file in this repo (Needed for M1 Mac). 
 
 
 https://learn.hashicorp.com/tutorials/vagrant/getting-started-boxes
 
 
-## You will need to follow the Vagrant getting stated or if on M1 Mac book you can use my method for psql (M1 mac still has opinions (: running vagrant).
+## Clone Repo to your local machine (Should have followed the Vagrant guide above unless on Mac M1 have docker or virtual box properly installed etc...)
 
 ``
 git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git 
@@ -38,7 +38,7 @@ git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git
 cd Vagrant-TF-Enterprise-Psql-Dev 
 `` 
 
-# Automates for a M1 MacBook use instructios for your OS. If issue post it I will work on it for you (Read comments on buildx)
+# Run the Vagrant.sh in full or comment out depending on your OS to get Vagrant up and running and ssh in (See Vagrant.sh)
 
 ``
 chmod +x vagrant.sh
@@ -49,7 +49,7 @@ chmod +x vagrant.sh
 ``
 
 
-## Next use the install script to supplement the vagrant machine to work with the version or additional workflows you need.  
+## Now you should be auto logged into your remote machine with Vagrant. Congratulations! Use this bootstrapt script to install needed workflows for the lab.  
 
 ``
 sudo apt-get install git
@@ -59,6 +59,10 @@ sudo apt-get install git
 git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git
 ``
 
+``
+cd Vagrant-TF-Enterprise-Psql-Dev.git
+``
+
 
 ``
 chmod +x install.sh
@@ -66,19 +70,6 @@ chmod +x install.sh
 
 ``
 ./install.sh
-``
-
-
-
-
-# Add docker compose 
-
-`` 
-sudo apt-get -y install python3-pip
-``
-
-``
-sudo pip install docker-compose
 ``
 
 
@@ -94,7 +85,7 @@ docker-compose up
 docker exec -it vagrant-tf-enterprise-psql-dev_db_1 /bin/bash
 ``
 
-# Update the DB Schema as example for lab
+# Update the DB Schema as example for lab (See full guide above for production use cases)
 
 `` 
 psql -U postgres
@@ -128,7 +119,7 @@ psql -h 0.0.0.0 -p 5432 -U postgres
 
 
 
-## Now that you are familar with TF Backend, Postgres please follow the checklist to learn the best ways to setup for dev, staging and prod! 
+## Let me know what else you would like to see that you may not be able to find on HashiCorp Learn. Happy to help. 
 
 
 
