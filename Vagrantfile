@@ -15,10 +15,10 @@ Vagrant.configure("2") do |config|
     docker.privileged = true
     docker.volumes = ["/sys/fs/cgroup:/sys/fs/cgroup:ro"]
   end
-  # Provision Docker Engine and pull down PostgreSQL
-  config.vm.provision :docker do |d|
-    d.pull_images "postgres:alpine"
-    d.run "postgres:alpine",
-       args: "-d -p 5432:5432 -e POSTGRES_PASSWORD=postgres"
-  end
+  # Provision Docker Engine and pull down PostgreSQL ## Commenting out in favor of pulling image once provision. 
+  #config.vm.provision :docker do |d|
+  #  d.pull_images "postgres:alpine"
+  #  d.run "postgres:alpine",
+  #     args: "-d -p 5432:5432 -e POSTGRES_PASSWORD=postgres"
+  #end
 end
