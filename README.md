@@ -1,4 +1,5 @@
-## Vagrant-TF-Enterprise-Psql-Dev
+## Lab to get started with Terraform State (PostgresSQL & Dynamo DB)
+
 Lab for setting up Terraform Enterprise with Postgressql as a backend. 
 This lab is to help understand how to use Postrgresql as a backend for TF state.
 For official reccomendations please refer to the links for both AWS and HashiCorp below:
