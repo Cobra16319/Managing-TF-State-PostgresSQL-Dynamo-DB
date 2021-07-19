@@ -85,7 +85,7 @@ docker-compose up
 docker exec -it vagrant-tf-enterprise-psql-dev_db_1 /bin/bash
 ``
 
-#  Step $ 6 Update the DB Schema as example for lab (See full guide above for production use cases)
+#  Step # 6 Update the DB Schema as example for lab (See full guide above for production use cases)
 
 `` 
 psql -U postgres
