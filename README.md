@@ -22,13 +22,13 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html
 https://github.com/Cobra16319/TF-Backend-Example
 
 
-## Refer here for Vagrant https://learn.hashicorp.com/vagrant unless you are using M1 Mac then you can use my Vagrant file in this repo (Needed for M1 Mac). 
+##  Refer here for Vagrant https://learn.hashicorp.com/vagrant unless you are using M1 Mac then you can use my Vagrant file in this repo (Needed for M1 Mac) and skip to Step # 2. 
 
 
 https://learn.hashicorp.com/tutorials/vagrant/getting-started-boxes
 
 
-## Clone Repo to your local machine (Should have followed the Vagrant guide above unless on Mac M1 have docker or virtual box properly installed etc...)
+##  Step # 1 Clone Repo to your local machine (Should have followed the Vagrant guide above unless on Mac M1 have docker or virtual box properly installed etc...)
 
 ``
 git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git 
@@ -38,7 +38,7 @@ git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git
 cd Vagrant-TF-Enterprise-Psql-Dev 
 `` 
 
-# Run the Vagrant.sh in full or comment out depending on your OS to get Vagrant up and running and ssh in (See Vagrant.sh)
+#  Step # 2 Run the Vagrant.sh in full or comment out depending on your OS to get Vagrant up and running and ssh in (See Vagrant.sh)
 
 ``
 chmod +x vagrant.sh
@@ -49,7 +49,7 @@ chmod +x vagrant.sh
 ``
 
 
-## Now you should be auto logged into your remote machine with Vagrant. Congratulations! Use this bootstrapt script to install needed workflows for the lab.  
+## Step # 3 Now you should be auto logged into your remote machine with Vagrant. Congratulations! Use this bootstrapt script to install needed workflows for the lab.  
 
 ``
 sudo apt-get install git
@@ -73,19 +73,19 @@ chmod +x install.sh
 ``
 
 
-# Deploy Docker 
+#  Step # 4 Deploy Docker 
 
 `` 
 docker-compose up 
 `` 
 
-# Enter the container 
+#  Step # 5 Enter the container 
 
 ``
 docker exec -it vagrant-tf-enterprise-psql-dev_db_1 /bin/bash
 ``
 
-# Update the DB Schema as example for lab (See full guide above for production use cases)
+#  Step $ 6 Update the DB Schema as example for lab (See full guide above for production use cases)
 
 `` 
 psql -U postgres
@@ -103,7 +103,7 @@ CREATE SCHEMA IF NOT EXISTS vault;
 CREATE SCHEMA IF NOT EXISTS registry;
 ``
 
-## Execute Terraform with the following commands to finish lab and use Postgres as a backend for TF
+##  Step # 7 Execute Terraform with the following commands to finish lab and use Postgres as a backend for TF
 
 ``
 Terraform init
