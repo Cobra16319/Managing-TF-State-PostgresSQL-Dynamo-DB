@@ -1,8 +1,10 @@
 ## Lab to get started with Terraform State (PostgresSQL & Dynamo DB)
 
-Lab for setting up Terraform Enterprise with Postgressql as a backend. 
-This lab is to help understand how to use Postrgresql as a backend for TF state.
-For official reccomendations please refer to the links for both AWS and HashiCorp below:
+Terraform provides benefits that include automated infrastructure management, lower deployment costs, and reduced provisioning time..
+
+Full options for local or remote backends here: https://www.terraform.io/docs/language/settings/backends/index.html
+
+For official reccomendations for your use case i.e. dev or enterprise please refer to the links for both AWS and HashiCorp below:
 
 ## Terraform Enterprise Guide and AWS RDS selection Guides below:
 
@@ -17,7 +19,7 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html
 https://learn.hashicorp.com/tutorials/vagrant/getting-started-boxes
 
 
-## Prerequisites: Git, Docker, Unzip, basic knowledge of OS, Docker, and DevOps tools.
+## You will need to follow the Vagrant getting stated or if on M1 Mac book you can use my method for psql (M1 mac still has opinions (: running vagrant).
 
 ``
 git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git 
