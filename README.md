@@ -26,7 +26,7 @@ git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git
 cd Vagrant-TF-Enterprise-Psql-Dev 
 `` 
 
-# Skip if you do not need Vagrant for the M1 Mac Book specifically. (This just automates that setup)
+# Automates for a M1 MacBook use instructios for your OS. If issue post it I will work on it for you (Read comments on buildx)
 
 ``
 chmod +x vagrant.sh
@@ -37,7 +37,25 @@ chmod +x vagrant.sh
 ``
 
 
-## Next Install Terraform to ensure it works follow this. Try this first https://learn.hashicorp.com/tutorials/terraform/install-cli if you have issues the method below will solve them.  
+## Next use the install script to supplement the vagrant machine to work with the version or additional workflows you need.  
+
+``
+sudo apt-get install git
+``
+
+``
+chmod +x install.sh
+``
+
+``
+./install.sh
+``
+
+
+
+
+
+# Working on removing this for streamlined script
 
 `` 
 sudo apt-get install wget unzip
