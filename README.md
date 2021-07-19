@@ -10,6 +10,7 @@ For official reccomendations for your use case i.e. dev or enterprise please ref
 
 ![image](https://user-images.githubusercontent.com/46206055/126203097-9f0e09e5-030a-4c94-b107-90567c8efa92.png)
 
+![image](https://user-images.githubusercontent.com/46206055/126203443-da1159ba-bccc-4b08-be1d-fc092cd55e1f.png)
 
 
 https://www.terraform.io/docs/enterprise/before-installing/postgres-requirements.html
