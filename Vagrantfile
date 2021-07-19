@@ -1,12 +1,12 @@
-Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/bionic64"
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
   config.vm.hostname = "ubuntu"
-  # Provider for VirtualBox
-  config.vm.provider :virtualbox do |vb|
-    vb.memory = "1024"
-    vb.cpus = 2
-  end
-  # Provider for Docker
+
+  ############################################################
+  # Provider for Docker on Intel or ARM (aarch64)
+  ############################################################
   config.vm.provider :docker do |docker, override|
     override.vm.box = nil
     docker.image = "rofrano/vagrant-provider:ubuntu"
@@ -14,11 +14,8 @@ Vagrant.configure("2") do |config|
     docker.has_ssh = true
     docker.privileged = true
     docker.volumes = ["/sys/fs/cgroup:/sys/fs/cgroup:ro"]
-  end
-  # Provision Docker Engine and pull down PostgreSQL ## Commenting out in favor of pulling image once provision. 
-  #config.vm.provision :docker do |d|
-  #  d.pull_images "postgres:alpine"
-  #  d.run "postgres:alpine",
-  #     args: "-d -p 5432:5432 -e POSTGRES_PASSWORD=postgres"
-  #end
+    # Uncomment to force arm64 for testing images on Intel
+    # docker.create_args = ["--platform=linux/arm64"]     
+  end  
+
 end
