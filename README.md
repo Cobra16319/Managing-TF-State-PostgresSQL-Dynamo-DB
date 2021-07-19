@@ -44,15 +44,17 @@ sudo apt-get install git
 ``
 
 ``
+git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git
+``
+
+
+``
 chmod +x install.sh
 ``
 
 ``
 ./install.sh
 ``
-
-
-
 
 
 # Working on removing this for streamlined script
