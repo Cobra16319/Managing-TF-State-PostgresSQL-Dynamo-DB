@@ -51,6 +51,16 @@ chmod +x vagrant.sh
 
 ## Step # 3 Now you should be auto logged into your remote machine with Vagrant. Congratulations! Use this bootstrapt script to install needed workflows for the lab.  
 
+`` 
+sudo apt-get update
+``
+
+`` 
+sudo apt-get upgrade
+``
+
+
+
 ``
 sudo apt-get install git
 ``
