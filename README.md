@@ -6,7 +6,10 @@ Full options for local or remote backends here: https://www.terraform.io/docs/la
 
 For official reccomendations for your use case i.e. dev or enterprise please refer to the links for both AWS and HashiCorp below:
 
-## Terraform Enterprise Guide and AWS RDS selection Guides below:
+## Terraform Enterprise Guide and AWS RDS selection Guides below & Architecture Below:
+
+![image](https://user-images.githubusercontent.com/46206055/126203097-9f0e09e5-030a-4c94-b107-90567c8efa92.png)
+
 
 
 https://www.terraform.io/docs/enterprise/before-installing/postgres-requirements.html
