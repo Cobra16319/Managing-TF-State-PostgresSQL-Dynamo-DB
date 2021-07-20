@@ -5,7 +5,7 @@
    # install docker and docker-compose
   ############################################################ 
 Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/bionic64"
+  cconfig.vm.box = "generic/centos7"
   config.vm.provision :docker
   config.vm.provision :docker_compose, yml: "/vagrant/docker-compose.yml", run: "always"
 
