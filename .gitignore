@@ -1,3 +1,14 @@
+# Vagrant and db 
+
+# OS metadata files
+.DS_Store
+Thumbs.db
+
+# Vagrant metadata folder
+.vagrant/
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
