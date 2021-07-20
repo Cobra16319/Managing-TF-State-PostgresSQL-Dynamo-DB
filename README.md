@@ -93,7 +93,7 @@ chmod +x post-install.sh
 docker-compose up 
 `` 
 
-#  Step # 5 Enter the container 
+#  Step # 5 Let your container run; pull up another terminal and get back into vagrant working directory you were in.
 
 ``
 docker exec -it vagrant-tf-enterprise-psql-dev_db_1 /bin/bash
