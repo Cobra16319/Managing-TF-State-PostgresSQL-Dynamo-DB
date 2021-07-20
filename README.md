@@ -41,6 +41,11 @@ cd Vagrant-TF-Enterprise-Psql-Dev
 #  Step # 2 Deploy Vagrant but pay attention to comments based on your OS in vagrant file
 
 ``
+vagrant plugin install vagrant-docker-compose
+``
+
+
+``
 vagrant up --provider=docker
 ``
 
