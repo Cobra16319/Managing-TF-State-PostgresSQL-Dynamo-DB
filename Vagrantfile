@@ -16,6 +16,14 @@ Vagrant.configure(2) do |config|
     docker.volumes = ["/sys/fs/cgroup:/sys/fs/cgroup:ro"]
     # Uncomment to force arm64 for testing images on Intel
     # docker.create_args = ["--platform=linux/arm64"]     
+    
+    
+    ############################################################
+   # install docker and docker-compose
+  ############################################################ 
+  config.vm.provision :docker
+  config.vm.provision :docker_compose
+    
   end  
 
 end
