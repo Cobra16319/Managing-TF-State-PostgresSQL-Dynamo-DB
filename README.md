@@ -52,11 +52,6 @@ vagrant ssh
 
 ## Step # 3 Now run the post-install script for dev tools
 
-`` 
-sudo apt-get update && sudo apt-get upgrade
-``
-
-
 ``
 sudo apt-get install git
 ``
