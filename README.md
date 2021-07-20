@@ -74,13 +74,11 @@ cd Vagrant-TF-Enterprise-Psql-Dev.git
 ``
 
 
-``
-chmod +x install.sh
-``
+# Took out shell script but pay attention to comments based on your OS
 
 ``
-./install.sh
-``
+vagrant up --provider=docker
+''
 
 
 #  Step # 4 Deploy Docker 
