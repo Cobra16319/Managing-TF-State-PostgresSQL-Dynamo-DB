@@ -60,7 +60,6 @@ sudo apt-get upgrade
 ``
 
 
-
 ``
 sudo apt-get install git
 ``
@@ -78,7 +77,7 @@ cd Vagrant-TF-Enterprise-Psql-Dev.git
 
 ``
 vagrant up --provider=docker
-''
+``
 
 
 #  Step # 4 Deploy Docker 
