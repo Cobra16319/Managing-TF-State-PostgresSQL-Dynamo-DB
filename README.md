@@ -72,6 +72,21 @@ chmod +x post-install.sh
 ./post-install.sh
 ``
 
+## Use only if TF does not install with post-install script
+
+``
+git clone https://github.com/robertpeteuil/terraform-installer.git
+``
+
+``
+sudo apt install unzip
+``
+
+## Change directory and run shell script for TF
+
+``
+./terraform-install.sh
+``
 
 
 #  Step # 4 Deploy Docker 
