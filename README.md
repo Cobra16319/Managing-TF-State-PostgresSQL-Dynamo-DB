@@ -1,4 +1,4 @@
-## Lab to get started with Terraform State (PostgresSQL & Dynamo DB)
+## Lab to get started with managing Terraform State (PostgresSQL & Dynamo DB)
 
 Terraform provides benefits that include automated infrastructure management, lower deployment costs, and reduced provisioning time..
 
