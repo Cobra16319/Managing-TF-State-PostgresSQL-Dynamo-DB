@@ -38,14 +38,10 @@ git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git
 cd Vagrant-TF-Enterprise-Psql-Dev 
 `` 
 
-#  Step # 2 Run the Vagrant.sh in full or comment out depending on your OS to get Vagrant up and running and ssh in (See Vagrant.sh)
+#  Step # 2 Deploy Vagrant but pay attention to comments based on your OS in vagrant file
 
 ``
-chmod +x vagrant.sh
-``
-
-`` 
-./vagrant.sh
+vagrant up --provider=docker
 ``
 
 
@@ -72,12 +68,14 @@ git clone https://github.com/Cobra16319/Vagrant-TF-Enterprise-Psql-Dev.git
 cd Vagrant-TF-Enterprise-Psql-Dev.git
 ``
 
-
-# Took out shell script but pay attention to comments based on your OS
+``
+chmod +x install.sh
+`` 
 
 ``
-vagrant up --provider=docker
+./install.sh
 ``
+
 
 
 #  Step # 4 Deploy Docker 
