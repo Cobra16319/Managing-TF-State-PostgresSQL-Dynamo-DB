@@ -49,8 +49,12 @@ vagrant plugin install vagrant-docker-compose
 vagrant up --provider=docker
 ``
 
+``
+vagrant ssh
+``
 
-## Step # 3 Now you should be auto logged into your remote machine with Vagrant. Congratulations! Use this bootstrapt script to install needed workflows for the lab.  
+
+## Step # 3 Now run the post-install script for dev tools
 
 `` 
 sudo apt-get update
@@ -74,11 +78,11 @@ cd Vagrant-TF-Enterprise-Psql-Dev.git
 ``
 
 ``
-chmod +x install.sh
+chmod +x post-install.sh
 `` 
 
 ``
-./install.sh
+./post-install.sh
 ``
 
 
