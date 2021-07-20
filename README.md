@@ -82,7 +82,9 @@ git clone https://github.com/robertpeteuil/terraform-installer.git
 sudo apt install unzip
 ``
 
-## Change directory and run shell script for TF
+``
+cd current directory for what you just pulled
+``
 
 ``
 ./terraform-install.sh
