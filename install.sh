@@ -1,6 +1,7 @@
+# HashiStack Shell Script
 #bin/bash
 
-for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15; do 
+for i in 1 2 3 4 5 6 7 8 9 10 11 12 13; do 
   #Adding HashiCorp Repo & Verify GPG signature
   
   sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
@@ -15,10 +16,6 @@ for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15; do
   sudo apt-get -y install packer
   sudo apt-get -y install consul
   
-  # Should already be installed but confirm latest (will fix) and install docker compose
-  
-  sudo apt-get -y install python3-pip
-  sudo pip install docker-compose
   
   # Verify version of software installed
   
