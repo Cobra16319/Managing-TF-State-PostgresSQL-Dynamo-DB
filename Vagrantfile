@@ -1,8 +1,16 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
+  
+  ############################################################
+   # install docker and docker-compose
+  ############################################################ 
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/bionic64"
 
-Vagrant.configure(2) do |config|
-  config.vm.hostname = "ubuntu"
+  config.vm.provision :docker
+  config.vm.provision :docker_compose, yml: "/vagrant/docker-compose.yml", run: "always"
+end
+
 
   ############################################################
   # Provider for Docker on Intel or ARM (aarch64)
@@ -16,14 +24,6 @@ Vagrant.configure(2) do |config|
     docker.volumes = ["/sys/fs/cgroup:/sys/fs/cgroup:ro"]
     # Uncomment to force arm64 for testing images on Intel
     # docker.create_args = ["--platform=linux/arm64"]     
-    
-    
-    ############################################################
-   # install docker and docker-compose
-  ############################################################ 
-  config.vm.provision :docker
-  config.vm.provision :docker_compose
-    
   end  
 
 end
