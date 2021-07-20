@@ -22,7 +22,7 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html
 https://github.com/Cobra16319/TF-Backend-Example
 
 
-##  Refer here for Vagrant https://learn.hashicorp.com/vagrant unless you are using M1 Mac then you can use my Vagrant file in this repo (Needed for M1 Mac) and skip to Step # 2. 
+##  Pay attention to the comments if you are on Intel or MAC M1 this project supports both. Consult docs below for vagrant.  
 
 
 https://learn.hashicorp.com/tutorials/vagrant/getting-started-boxes
