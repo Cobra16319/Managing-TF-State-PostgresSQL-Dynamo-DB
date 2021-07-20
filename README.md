@@ -95,7 +95,7 @@ sudo apt install unzip
 docker-compose up 
 `` 
 
-#  Step # 5 Let your container run; pull up another terminal and get back into vagrant working directory you were in.
+#  Step # 5 Let your container run; pull up another terminal and get back into vagrant working directory you were in. Your name may be different use 'docker ps' to confirm name
 
 ``
 docker exec -it vagrant-tf-enterprise-psql-dev_db_1 /bin/bash
