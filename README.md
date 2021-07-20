@@ -121,7 +121,15 @@ CREATE SCHEMA IF NOT EXISTS registry;
 
 ``
 Terraform init
+``
+
+
+``
 Terraform plan
+``
+
+
+``
 Terraform apply
 ``
 
