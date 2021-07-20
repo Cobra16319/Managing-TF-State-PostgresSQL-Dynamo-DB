@@ -131,7 +131,8 @@ psql -h 0.0.0.0 -p 5432 -U postgres
 
 ## Let me know what else you would like to see that you may not be able to find on HashiCorp Learn. Happy to help. 
 
-
+## Credit to Rofrano for help with docker image and Makerfile... I was stuck on this for weeks. Great work! 
+https://github.com/rofrano/vagrant-docker-provider
 
 
 
